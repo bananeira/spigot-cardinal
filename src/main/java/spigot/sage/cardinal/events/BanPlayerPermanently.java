@@ -8,12 +8,10 @@ public class BanPlayerPermanently {
     public static void ban(Player executor, Player target, String reason) {
         Bukkit.getBanList(BanList.Type.NAME)
                 .addBan(
-                        target
-                                .getDisplayName(),
+                        target.getDisplayName(),
                         reason,
                         null,
-                        executor
-                                .getDisplayName()
+                        executor.getDisplayName()
                 );
 
         if ( target.isOnline() ) {
