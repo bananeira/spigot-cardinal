@@ -1,0 +1,4 @@
+name: Cardinal
+version: '${project.version}'
+main: spigot.sage.cardinal.Cardinal
+api-version: 1.18
