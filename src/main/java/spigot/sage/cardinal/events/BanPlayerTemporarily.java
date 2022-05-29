@@ -10,12 +10,10 @@ public class BanPlayerTemporarily {
     public static void ban(Player executor, Player target, String reason, int duration) {
         Bukkit.getBanList(BanList.Type.NAME)
                 .addBan(
-                        target
-                                .getDisplayName(),
+                        target.getDisplayName(),
                         reason,
                         new Date(System.currentTimeMillis() + duration),
-                        executor
-                                .getDisplayName());
+                        executor.getDisplayName());
 
         if ( target.isOnline() ) {
             target.kickPlayer("");
